@@ -141,12 +141,12 @@ export const header = ({
     keys.push('Secure');
   }
 
-  if (httpOnly) {
-    keys.push('HttpOnly');
+  if (sameSite === SameSite.NONE && !secure) {
+    keys.push('Secure');
   }
 
-  if (sameSite === SameSite.NONE && !secure) {
-    throw new Error(`When SameSite value is 'None', Secure must be set`);
+  if (httpOnly) {
+    keys.push('HttpOnly');
   }
 
   return keys.join('; ');
