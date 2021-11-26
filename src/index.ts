@@ -14,19 +14,19 @@ enum Expiry {
   SESSION = 'Session',
 }
 
-interface Options {
+type Options = {
   key: string,
   value: any,
   maxAge?: number,
-  expires?: number | Expiry,
+  expires?: string | Expiry,
   path?: string,
   secure?: boolean,
   urlEncode: boolean
 }
 
-interface ClientOptions extends Options {}
+type ClientOptions = Options & {}
 
-interface ServerOptions extends Options {
+type ServerOptions = Options & {
   domain?: string,
   httpOnly?: boolean,
   sameSite?: string,
