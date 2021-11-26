@@ -21,7 +21,7 @@ type Options = {
   expires?: string | Expiry,
   path?: string,
   secure?: boolean,
-  urlEncode: boolean
+  urlEncode?: boolean
 }
 
 type ClientOptions = Options & {}
