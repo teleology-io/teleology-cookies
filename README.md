@@ -19,7 +19,7 @@ yarn add @teleology/cookies
 | secure | Cookies are only sent during HTTPS requests | boolean | Client & Sever |
 | httpOnly | Prevents Javascript from accessing the cookie | boolean | Server Only |
 | sameSite | Whether or not a cookie is sent with CORS | 'Strict' or 'Lax' or 'None' | Server Only |
-| urlEncode | Whether to encode the cookie value | boolean | 
+| urlEncode | Whether to encode the cookie value | boolean | Client & Server |
 
 ## Client Usage
 ```javascript
