@@ -1,6 +1,6 @@
 {
   "name": "@teleology/cookies",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A slim implementation for client+server to handle coookies",
   "repository": "git@github.com:teleology-io/teleology-cookies.git",
   "author": "Chris Sullivan <chrissullivan.dev@gmail.com>",
@@ -23,5 +23,13 @@
     "eslint-plugin-react": "^7.27.0",
     "prettier": "^2.2.1",
     "typescript": "^4.5.2"
-  }
+  },
+  "keywords": [
+    "cookies",
+    "cookie",
+    "server",
+    "header",
+    "client",
+    "browser"
+  ]
 }
