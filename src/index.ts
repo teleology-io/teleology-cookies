@@ -87,6 +87,9 @@ export const set = ({
   secure,
   urlEncode = false
 }: ClientOptions) => {
+  // don't write anything if invalid
+  if (!value) return;
+
   const args = {
     [key]: sanitizeValue({ value, urlEncode }),
     'max-age': maxAge,
@@ -115,6 +118,9 @@ export const header = ({
   sameSite,
   urlEncode = false
 }: ServerOptions) => {
+  // don't write anything if invalid
+  if (!value) return;
+
   const args = {
     [key]: sanitizeValue({ value, urlEncode }),
     'Max-Age': maxAge,
